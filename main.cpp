@@ -29,6 +29,14 @@ int main() {
     std::string new_sentence = sentence.replace(pos, sub_str.length(), "Python");
     
     std::cout << "Cadena resultante: " << new_sentence << std::endl;
+
+    std::string str = "Inteligencia Artificial";
+    std::string subStr = str.substr(13, 9); // "Artificial"
+    
+    std::string new_str = str.insert(0, "La "); // "La Inteligencia Artificial"
+    
+    std::cout << "Subcadena: " << subStr << std::endl;
+    std::cout << "Cadena resultante: " << new_str << std::endl;
     
     return 0;
 }
